@@ -327,3 +327,23 @@ function loop(time){
 }
 
 requestAnimationFrame(loop);
+
+function mobileMove(dir){
+
+    if(dir === "up" && direction.y !== 1){
+        nextDirection = {x:0,y:-1};
+    }
+
+    if(dir === "down" && direction.y !== -1){
+        nextDirection = {x:0,y:1};
+    }
+
+    if(dir === "left" && direction.x !== 1){
+        nextDirection = {x:-1,y:0};
+    }
+
+    if(dir === "right" && direction.x !== -1){
+        nextDirection = {x:1,y:0};
+    }
+
+}
