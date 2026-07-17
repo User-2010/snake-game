@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Snake 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🐍 Snake 2.0</h1>
+
+    <div class="hud">
+        <div>⭐ Очки: <span id="score">0</span></div>
+        <div>🏆 Рекорд: <span id="best">0</span></div>
+    </div>
+
+    <canvas
+        id="game"
+        width="600"
+        height="600">
+    </canvas>
+
+    <div class="controls">
+        ← ↑ ↓ → или WASD
+    </div>
+
+    <button id="restart">
+        🔄 Играть снова
+    </button>
+
+</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
